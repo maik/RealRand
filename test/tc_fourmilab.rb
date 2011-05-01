@@ -19,10 +19,10 @@ class TC_FourmiLab < Test::Unit::TestCase # :nodoc:
   end
   
   def test_randbyte
-    [1, 2, 10, 2048].each { |x|
+    [1, 2, 10, 2048].each do |x|
       numbers = @generator.randbyte(x)
       assert_equal(x, numbers.length)
-    }
+    end
   end
 end
 
