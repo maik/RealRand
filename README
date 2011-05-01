@@ -13,7 +13,7 @@ around the next time you are surrounded by a group of people.).
 Real randomness occurs e.g. in atmospheric noise, during radioactive
 decay, or in a lava lamp. Fortunately, you do not have to listen to an
 old radio the whole day or, even worse, deposit some uranium in your
-living room and observe it with a Geiger-Müller tube. Other people do
+living room and observe it with a Geiger-MÃ¼ller tube. Other people do
 so (in a slightly modified manner, of course) and they kindly make
 their results public.
 
@@ -23,7 +23,7 @@ numbers for free:
     atmospheric noise on this site.
   * http://www.fourmilab.ch/hotbits - The HotBits generator creates
     real random numbers by timing successive pairs of radioactive
-    decays detected by a Geiger-Müller tube interfaced to a computer.
+    decays detected by a Geiger-MÃ¼ller tube interfaced to a computer.
   * http://random.hd.org - "This system gathers its 'entropy' or
     truely random noise from a number of sources, including local
     processes, files and devices, Web page hits and remote Web sites."
@@ -105,4 +105,4 @@ Contact
 If you have any suggestions or want to report bugs, please contact me.
   _________________________________________________________________
 
-               Copyright © 2003 -2011 by Maik Schmidt.
+               Copyright Â© 2003 - 2011 by Maik Schmidt.
