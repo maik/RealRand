@@ -28,8 +28,12 @@ class TC_RandomOrg < Test::Unit::TestCase # :nodoc:
   end
   
   def test_zero_amount
-    assert_equal([], @generator.randnum(0, 1, 100))
-    assert_equal([], @generator.randbyte(0))
+    assert_raises(RangeError) {
+      @generator.randnum(0, 1, 100)
+    }
+    assert_raise(RangeError) {
+      @generator.randbyte(0)
+    }
   end
   
   def test_randnum

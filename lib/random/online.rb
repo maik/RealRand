@@ -71,7 +71,7 @@ module Random
     # Note: randbyte is deprecated, should use '/integers/' instead.
     # Network load decrease if using hex format instead here?
     def randbyte(nbytes = 256)
-      if nbytes < 0 || nbytes > 16_384
+      if nbytes <= 0 || nbytes > 16_384
         raise RangeError, "Invalid amount: #{nbytes}."
       end
       return [] if nbytes == 0
