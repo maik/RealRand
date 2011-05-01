@@ -1,0 +1,12 @@
+PLEASE NOTE:
+------------
+
+This library requires at least Ruby 1.8.
+
+Installation instructions
+-------------------------
+
+  % ruby install.rb config
+  % ruby install.rb setup
+  % ruby install.rb install
+
