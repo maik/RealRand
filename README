@@ -51,15 +51,15 @@ generating real random numbers is a piece of cake:
 
   require 'random/online'
 
-  generator1 = Random::RandomOrg.new
+  generator1 = RealRand::RandomOrg.new
   puts generator1.randbyte(5).join(",")
   puts generator1.randnum(100, 1, 6).join(",") # Roll the dice 100 times.
 
-  generator2 = Random::FourmiLab.new
+  generator2 = RealRand::FourmiLab.new
   puts generator2.randbyte(5).join(",")
   # randnum is not supported.
 
-  generator3 = Random::EntropyPool.new
+  generator3 = RealRand::EntropyPool.new
   puts generator3.randbyte(5).join(",")
   # randnum is not supported.
 
@@ -86,7 +86,7 @@ Proxies
 If you have to use a HTTP proxy, you can set it as follows:
   require 'random/online'
 
-  generator1 = Random::RandomOrg.new
+  generator1 = RealRand::RandomOrg.new
   generator1.proxy_host = 'your.proxy.here'
   generator1.proxy_port = 8080
   generator1.proxy_usr  = 'your.user.here'

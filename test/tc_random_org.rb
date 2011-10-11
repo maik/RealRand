@@ -5,7 +5,7 @@ require '../lib/random/online'
 
 class TC_RandomOrg < Test::Unit::TestCase # :nodoc:
   def setup
-    @generator = Random::RandomOrg.new
+    @generator = RealRand::RandomOrg.new
   end
   
   def test_illegal_amount

@@ -5,7 +5,7 @@ require '../lib/random/online'
 
 class TC_FourmiLab < Test::Unit::TestCase # :nodoc:
   def setup
-    @generator = Random::FourmiLab.new
+    @generator = RealRand::FourmiLab.new
   end
 
   def test_illegal_amount

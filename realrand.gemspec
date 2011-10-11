@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = %q{realrand}
-  s.version = "1.0.4"
-  s.date = %q{2011-05-01}
+  s.version = "2.0.0"
+  s.date = %q{2011-10-10}
   s.summary = %q{A simple API for creating real random numbers.}
   s.email = %q{contact@maik-schmidt.de}
   s.homepage = %q{http://realrand.rubyforge.org}

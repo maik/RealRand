@@ -1,13 +1,13 @@
 # = RealRand
 #
 # Author::    Maik Schmidt <contact@maik-schmidt.de>
-# Copyright:: Copyright (c) 2003-2009 Maik Schmidt
+# Copyright:: Copyright (c) 2003-2011 Maik Schmidt
 # License::   Distributes under the same terms as Ruby.
 #
 
 require 'net/http'
 
-module Random
+module RealRand
   class OnlineGenerator
     attr_reader :host
     attr_accessor :proxy_host, :proxy_port, :proxy_usr, :proxy_pwd

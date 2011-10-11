@@ -5,7 +5,7 @@ require '../lib/random/online'
 
 class TC_EntropyPool < Test::Unit::TestCase # :nodoc:
   def setup
-    @generator = Random::EntropyPool.new
+    @generator = RealRand::EntropyPool.new
   end
 
   def test_illegal_amount
