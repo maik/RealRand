@@ -9,4 +9,5 @@ Gem::Specification.new do |s|
   s.autorequire = %q{random/online}
   s.authors = ["Maik Schmidt"]
   s.files = ["lib/random/online.rb"]
+  s.license = 'Ruby'
 end
