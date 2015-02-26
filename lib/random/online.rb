@@ -1,7 +1,7 @@
 # = RealRand
 #
 # Author::    Maik Schmidt <contact@maik-schmidt.de>
-# Copyright:: Copyright (c) 2003-2011 Maik Schmidt
+# Copyright:: Copyright (c) 2003-2015 Maik Schmidt
 # License::   Distributes under the same terms as Ruby.
 #
 
@@ -10,10 +10,11 @@ require 'net/http'
 module RealRand
   class OnlineGenerator
     attr_reader :host
-    attr_accessor :proxy_host, :proxy_port, :proxy_usr, :proxy_pwd
+    attr_accessor :ssl, :proxy_host, :proxy_port, :proxy_usr, :proxy_pwd
 
-    def initialize(host)
+    def initialize(host,ssl = false)
       @host = host
+      @ssl = ssl
       @proxy_host = nil
       @proxy_port = -1
       @proxy_usr = nil
@@ -28,7 +29,7 @@ module RealRand
         @proxy_port,
         @proxy_usr,
         @proxy_pwd
-      ).start(@host) { |h|
+      ).start(@host,nil,:use_ssl => @ssl) { |h|
         response = h.get("#{script}?#{parameters}")
         if response.class == Net::HTTPOK
           return check_response(response)
@@ -51,7 +52,7 @@ module RealRand
   
   class RandomOrg < OnlineGenerator
     def initialize
-      super("www.random.org")
+      super("www.random.org",true)
     end
 
     def randnum(num = 100, min = 1, max = 100, args = {})
