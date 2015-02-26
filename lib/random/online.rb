@@ -6,6 +6,7 @@
 #
 
 require 'net/http'
+require 'openssl'
 
 module RealRand
   class OnlineGenerator
